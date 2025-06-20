@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Bebas+Neue&display=swap');
+
+body {
+  font-family: "Ancizar Sans", sans-serif;
+  background-color: #DFF2EB;
+  margin: 0px;
+  height: 100%;
+}
+
+/* Seccion de seleccionar mascota en el juego */
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: #4A628A;
+  font-size: 100px;
+  margin: 52px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.subtitulo {
+  color: #7AB2D3;
+  font-size: 36px;
+  margin: 0px 0px 46px 0px;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 5vw;
+} 
+
+.tarjetas-ataques {
+  display: flex;
+  gap: 7vw;
+}
+.tarjeta-de-mokepon {
+  color: #1e3c6e;
+  width: 260px;
+  height: 185px;
+  background: #7AB2D3;
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta-de-mokepon:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.tarjeta-de-mokepon p {
+  font-size: 22px;
+  margin: 0px 0px 0px 15px;
+}
+
+.tarjeta-de-mokepon > img {
+  width: 180px;
+  height: min-content;
+}
+
+#boton-mascota {
+  margin: 45px 0px 0px 0px;
+  width: 240px;
+  height: 34px;
+  background-color: #B9E5E8;
+  color: #1e3c6e;
+  border: solid 2px #7AB2D3;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Ancizar Sans", sans-serif;
+}
+
+#boton-mascota:hover {
+  opacity: 0.7;
+
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: #27548A;
+  color: white;
+}
+
+/* Seccion del ataque en el juego */
+
+#seleccionar-ataque {
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EDF1D6;
+}
+
+#seleccionar-ataque .titulo {
+  color: #40513B;
+}
+
+#seleccionar-ataque .subtitulo {
+  color: #609966;
+}
+
+.boton-de-ataque {
+  width: 90px;
+  height: 60px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-size: 34px;
+  border-style: none;
+  font-family: "Ancizar Sans", sans-serif;
+}
+
+#boton-fuego {
+  background-color: #FED16A;
+}
+#boton-agua {
+  background-color: #00CAFF;
+}
+#boton-tierra {
+  background-color: #8A784E;
+}
+
+#mensajes {
+  width: 180px;
+  background-color: #609966;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#boton-reiniciar {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-family: "Ancizar Sans", sans-serif;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Mapa Canvas */
+
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mapa {
+  border: solid 2px white;
+}
+
+@media (max-width: 900px) {
+  .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
+  }
+}
