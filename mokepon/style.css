@@ -3,7 +3,7 @@
 body {
   font-family: "Ancizar Sans", sans-serif;
   background-color: #DFF2EB;
-  margin: 0px;
+  padding: 0px;
   height: 100%;
 }
 
@@ -174,8 +174,29 @@ input:checked + label {
   justify-content: center;
 }
 
-@media (max-width: 600px) {
+#ver-mapa button {
+  padding: 0px;
+  margin: 5px;
+  width: 80px;
+  height: 40px;
+  background-color: #B9E5E8;
+  color: #1e3c6e;
+  border: solid 2px #7AB2D3;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Ancizar Sans", sans-serif;
+}
+
+@media (max-width: 560px) {
   .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 300px) {
+  #ver-mapa div {
+    display: flex;
+    align-items: center;
     flex-direction: column;
   }
 }
